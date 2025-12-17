@@ -36,3 +36,6 @@ This project is designed for:
 The engagement began with network discovery to identify active hosts within the target scope. An arp-scan of the 192.168.50.0/24 subnet was performed. This scan identified the Morpheus virtual machine host at IP address 192.168.50.137, which was subsequently designated as the primary target for testing.
 ```bash
   sudo arp-scan -l
+```
+
+![Arp Scan](screenshots/arpScan.png)
