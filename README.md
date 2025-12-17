@@ -14,3 +14,11 @@ This project is designed for:
   - Demonstrating offensive security skills  
   - Showcasing professional reporting  
   - GitHub & portfolio visibility  
+
+# Objectives 
+
+* Identify exposed services and attack vectors
+* Gain initial foothold on the target system
+* Escalate privileges to root/administrator
+* Document findings using industry-style reporting
+* Provide remediation recommendations
