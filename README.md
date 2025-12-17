@@ -6,10 +6,13 @@ Lab Source: VulnHub – Morpheus
 Assessment Type: Black-box 
 Date: 2025-12-18  
 
+# Table of Contents  
+
 # Project Overview
 
 This repository documents a full penetration test of the VulnHub Morpheus virtual machine.  
 The objective of this project is to simulate a real-world penetration testing engagement by identifying, exploiting, and documenting vulnerabilities from initial access to full system compromise.  
+
 This project is designed for:
   - Demonstrating offensive security skills  
   - Showcasing professional reporting  
@@ -22,3 +25,11 @@ This project is designed for:
 * Escalate privileges to root/administrator
 * Document findings using industry-style reporting
 * Provide remediation recommendations
+
+# Reconnaissance  
+
+## Network Discovery  
+
+The engagement began with network discovery to identify active hosts within the target scope. An arp-scan of the 192.168.50.0/24 subnet was performed. This scan identified the Morpheus virtual machine host at IP address 192.168.50.137, which was subsequently designated as the primary target for testing.
+```bash
+  sudo arp-scan -l
