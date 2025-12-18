@@ -10,6 +10,7 @@ Date: 2025-12-18
 1. [Project Overview](#project-overview)
 2. [Objectives](#objectives)
 3. [Reconnaissance](#reconnaissance)
+4. [Enumeration](#enumeration)
 
 # Project Overview
 
