@@ -39,3 +39,7 @@ The engagement began with network discovery to identify active hosts within the 
 ```
 
 ![Arp Scan](screenshots/arpScan.png)
+
+## Port Scanning 
+
+The engagement continued with Scanning the network to find all ports available and scanning to find the version on all the ports  
