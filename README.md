@@ -42,4 +42,11 @@ The engagement began with network discovery to identify active hosts within the 
 
 ## Port Scanning 
 
-The engagement continued with Scanning the network to find all ports available and scanning to find the version on all the ports  
+Following host discovery, comprehensive port and service enumeration was performed against the target host (192.168.50.137). This phase aimed to identify all accessible network services and their associated software versions, which is critical for vulnerability analysis.  
+```bash
+  nmap -p- 192.168.50.137 -T4
+
+  nmap -sCV -p 22,80,81 192.168.50.137
+```
+![Arp Scan](screenshots/nmapScan.png)
+
