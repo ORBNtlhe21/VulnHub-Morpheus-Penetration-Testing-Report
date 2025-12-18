@@ -3,7 +3,7 @@
 Author: Oarabile Ntlhe  
 Role: Junior Penetration Tester  
 Lab Source: Matrix-Breakout: 2 Morpheus  
-Assessment Type: Black-box 
+Assessment Type: Black-box  
 Date: 2025-12-18  
 
 # Table of Contents  
