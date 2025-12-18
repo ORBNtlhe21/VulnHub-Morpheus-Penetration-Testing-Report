@@ -7,8 +7,8 @@ Assessment Type: Black-box
 Date: 2025-12-18  
 
 # Table of Contents  
-1. [Project Overview](#-project-overview)
-2. [Objectives](#-objectives)
+1. [Project Overview](#project-overview)
+2. [Objectives](#objectives)
 3. [Reconnaissance](#reconnaissance)
 
 # Project Overview
@@ -49,4 +49,6 @@ Following host discovery, comprehensive port and service enumeration was perform
   nmap -sCV -p 22,80,81 192.168.50.137
 ```
 ![Arp Scan](screenshots/nmapScan.png)
+
+# Enumeration  
 
