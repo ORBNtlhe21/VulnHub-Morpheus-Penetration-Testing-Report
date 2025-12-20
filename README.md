@@ -11,6 +11,7 @@ Date: 2025-12-18
 2. [Objectives](#objectives)
 3. [Reconnaissance](#reconnaissance)
 4. [Enumeration](#enumeration)
+5. [Privilege Escalation](#privilege-escalation)
 
 # Project Overview
 
