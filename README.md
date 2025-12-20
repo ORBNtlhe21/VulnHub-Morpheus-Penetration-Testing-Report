@@ -53,3 +53,15 @@ Following host discovery, comprehensive port and service enumeration was perform
 
 # Enumeration  
 
+Following service discovery, which identified HTTP services on ports 80 and 81, directory enumeration was performed against the primary web application (http://192.168.50.137:80) using Gobuster. This brute-force technique systematically tests for common and hidden directories that may contain sensitive information or functionality.  
+```bash
+  gobuster dir -u http://192.168.50.137 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,js,txt,asp,aspx
+```
+
+![Arp Scan](screenshots/gobuster)  
+
+#### Key Findings  
+  - robots.txt
+  - graffiti.txt
+  - graffiti.php
+
