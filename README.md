@@ -1,7 +1,7 @@
 # VulnHub-Morpheus-Penetration-Testing-Report
 
 Author: Oarabile Ntlhe  
-Role: Junior Penetration Tester  
+Role: Penetration Tester  
 Lab Source: Matrix-Breakout: 2 Morpheus  
 Assessment Type: Black-box  
 Date: 2025-12-18  
@@ -63,5 +63,24 @@ Following service discovery, which identified HTTP services on ports 80 and 81, 
 #### Key Findings  
   - robots.txt
   - graffiti.txt
-  - graffiti.php
+  - graffiti.php  
+
+## Remote Code Execution via File Write Vulnerability  
+Risk: Critical  
+CVSS: 9.8  
+Affected Component: graffiti.php on port 80  
+
+### Description  
+
+The graffiti.php application contains a file write vulnerability that allows unauthenticated attackers to write arbitrary content to the web server. This functionality lacked proper input validation and file extension restrictions, enabling the upload of PHP scripts leading to remote code execution.  
+
+### Exploitation Path:  
+  - Discovery: Analysis of graffiti.php revealed a text input field that directly wrote user-supplied data to graffiti.txt on the server.
+  - Interception: Using Burp Suite, the HTTP POST request was intercepted and examined in the Repeater module.
+  - Manipulation: The request was modified to replace the benign text payload with a PHP reverse shell script and change the target filename to shell.php.
+  - Execution: A netcat listener was established, and navigating to http://192.168.1.105/shell.php triggered the reverse shell connection.  
+
+![Arp_Scan](screenshots/burp.png)  
+
+![Arp_Scan](screenshots/flag1.png)  
 
