@@ -65,6 +65,8 @@ Following service discovery, which identified HTTP services on ports 80 and 81, 
   - graffiti.txt
   - graffiti.php  
 
+# Exploitation  
+
 ## Remote Code Execution via File Write Vulnerability  
 Risk: Critical  
 CVSS: 9.8  
@@ -94,4 +96,18 @@ Successful exploitation provides unauthenticated remote code execution with web 
   - Validate file extensions and content before writing
   - Remove unnecessary file write functionality
 
-  
+# Privilege Escalation  
+
+### Description  
+
+After obtaining initial access as the www-data user, privilege escalation analysis was performed using the LinPEAS enumeration script. This identified a vulnerable kernel version susceptible to the DirtyPipe vulnerability. Exploitation of this kernel flaw allowed the www-data user to overwrite arbitrary read-only files, including SUID binaries, leading to full root compromise.  
+
+### Exploitation Process  
+  - Post-Exploitation Enumeration: The LinPEAS script was transferred to the target and executed to identify potential privilege escalation vectors.
+  - Vulnerability Identification: LinPEAS output indicated a vulnerable kernel susceptible to CVE-2022-0847 (DirtyPipe).
+  - Exploit Deployment: A publicly available DirtyPipe exploit was compiled and executed on the target system.
+  - Privilege Escalation: The exploit modified the SUID /bin/su binary to grant root privileges, resulting in a full root shell.
+
+![Arp_Scan](screenshots/dirtypipe.png)  
+![Arp_Scan](screenshots/root.png)  
+![Arp_Scan](screenshots/complete.png)  
