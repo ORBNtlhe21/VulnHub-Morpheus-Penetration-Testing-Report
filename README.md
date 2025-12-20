@@ -95,4 +95,3 @@ Successful exploitation provides unauthenticated remote code execution with web 
   - Remove unnecessary file write functionality
 
   
-  - 
