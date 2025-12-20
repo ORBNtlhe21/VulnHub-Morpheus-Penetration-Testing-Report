@@ -84,3 +84,15 @@ The graffiti.php application contains a file write vulnerability that allows una
 
 ![Arp_Scan](screenshots/flag1.png)  
 
+### Impact  
+
+Successful exploitation provides unauthenticated remote code execution with web server privileges, potentially leading to complete system compromise, data exfiltration, and lateral movement within the network.  
+
+### Recommendation  
+  - Implement strict input validation and sanitization
+  - Restrict file write operations to non-executable directories  
+  - Validate file extensions and content before writing
+  - Remove unnecessary file write functionality
+
+  
+  - 
