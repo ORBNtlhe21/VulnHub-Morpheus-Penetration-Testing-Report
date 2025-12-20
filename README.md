@@ -58,7 +58,7 @@ Following service discovery, which identified HTTP services on ports 80 and 81, 
   gobuster dir -u http://192.168.50.137 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,js,txt,asp,aspx
 ```
 
-![Arp Scan](screenshots/gobuster)  
+![Arp_Scan](screenshots/gobuster)  
 
 #### Key Findings  
   - robots.txt
